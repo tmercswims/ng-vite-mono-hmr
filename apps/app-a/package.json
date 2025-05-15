@@ -18,7 +18,6 @@
   "dependencies": {
     "@angular/common": "^19.2.11",
     "@angular/core": "^19.2.11",
-    "@angular/forms": "^19.2.11",
     "@angular/platform-browser": "^19.2.11",
     "@angular/router": "^19.2.11",
     "rxjs": "^7.8.2",
