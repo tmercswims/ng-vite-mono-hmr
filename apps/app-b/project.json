@@ -1,0 +1,82 @@
+{
+  "name": "app-b",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/app-b/src",
+  "projectType": "application",
+  "tags": ["scope:client"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:application",
+      "outputs": ["{projectRoot}/dist"],
+      "options": {
+        "baseHref": "/app-b/",
+        "outputPath": "apps/app-b/dist/app-b/",
+        "index": "apps/app-b/src/index.html",
+        "browser": "apps/app-b/src/main.ts",
+        "polyfills": ["apps/app-b/src/polyfills.ts"],
+        "tsConfig": "apps/app-b/tsconfig.json",
+        "aot": true,
+        "assets": [],
+        "styles": [],
+        "stylePreprocessorOptions": {},
+        "scripts": [],
+        "allowedCommonJsDependencies": []
+      },
+      "configurations": {
+        "development": {
+          "optimization": false,
+          "sourceMap": true,
+          "namedChunks": true
+        },
+        "production": {
+          "fileReplacements": [],
+          "optimization": {
+            "scripts": true,
+            "styles": {
+              "minify": true,
+              "inlineCritical": false
+            },
+            "fonts": true
+          },
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "30kb",
+              "maximumError": "100kb"
+            }
+          ]
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "serve": {
+      "executor": "@nx/angular:dev-server",
+      "options": {
+        "servePath": "/app-b/",
+        "port": 4202,
+        "proxyConfig": "apps/app-b/proxy.config.mjs",
+        "buildTarget": "app-b:build",
+        "hmr": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "app-b:build:development"
+        },
+        "production": {
+          "buildTarget": "app-b:build:production"
+        }
+      },
+      "defaultConfiguration": "development",
+      "continuous": true
+    }
+  }
+}

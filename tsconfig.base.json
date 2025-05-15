@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "isolatedModules": false,
+    "lib": ["ES2022", "DOM"],
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist/",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "ES2022",
+    "typeRoots": ["./node_modules/@types"],
+    "useDefineForClassFields": false,
+    "verbatimModuleSyntax": true
+  }
+}

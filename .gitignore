@@ -1,0 +1,73 @@
+# compiled output
+**/dist/
+**/tmp/
+**/out-tsc/
+/pkg
+
+# configs and environments
+*.env
+!example.env
+credentials.txt
+
+# migration
+./npdfile.js
+
+# dependencies
+**/node_modules/
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# logging
+logs/
+npm-debug.log
+yarn-error.log
+
+# misc
+*/.scratch
+/.sass-cache
+/connect.lock
+**/coverage/
+/storage
+
+# system Files
+.DS_Store
+Thumbs.db
+
+# mimiked S3
+/s3
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# angular
+.angular/
+
+# ANTLR
+gen/
+
+# Nx
+.nx/*
+!.nx/workflows
+
+# jest cache and coverage
+.jest/

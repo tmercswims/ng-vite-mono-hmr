@@ -1,0 +1,27 @@
+{
+  "name": "@ng-vite-mono-hmr/app-a",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "Thomas Mercurio <tmercswims@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmercswims/ng-vite-mono-hmr.git",
+    "directory": "apps/app-a/"
+  },
+  "homepage": "https://github.com/tmercswims/ng-vite-mono-hmr#readme",
+  "engines": {
+    "node": "22",
+    "yarn": "4",
+    "npm": "Please use yarn instead of npm to install dependencies"
+  },
+  "dependencies": {
+    "@angular/common": "^19.2.11",
+    "@angular/core": "^19.2.11",
+    "@angular/forms": "^19.2.11",
+    "@angular/platform-browser": "^19.2.11",
+    "@angular/router": "^19.2.11",
+    "rxjs": "^7.8.2",
+    "zone.js": "^0.15.0"
+  }
+}

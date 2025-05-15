@@ -1,0 +1,42 @@
+{
+  "name": "@ng-vite-mono-hmr/root",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "Thomas Mercurio <tmercswims@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmercswims/ng-vite-mono-hmr.git"
+  },
+  "homepage": "https://github.com/tmercswims/ng-vite-mono-hmr#readme",
+  "engines": {
+    "node": "22",
+    "yarn": "4",
+    "npm": "Please use yarn instead of npm to install dependencies"
+  },
+  "packageManager": "yarn@4.9.1",
+  "scripts": {
+    "start": "nx serve"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.12",
+    "@angular-devkit/core": "^19.2.12",
+    "@angular-devkit/schematics": "^19.2.12",
+    "@angular/compiler": "^19.2.11",
+    "@angular/compiler-cli": "^19.2.11",
+    "@nx/angular": "21.0.3",
+    "@nx/devkit": "21.0.3",
+    "@nx/js": "21.0.3",
+    "@nx/workspace": "21.0.3",
+    "@schematics/angular": "^19.2.12",
+    "nx": "21.0.3",
+    "rxjs": "^7.8.2",
+    "typescript": "^5.8.3"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/app-a",
+      "apps/app-b"
+    ]
+  }
+}
