@@ -1,6 +1,8 @@
 # ng-vite-mono-hmr
 
-This repository is a demo of a bug when using multiple angular applications that proxy to each other.
+This repository is a demo of a bug when using multiple Angular applications that proxy to each other.
+
+See [angular/angular-cli#30321](https://github.com/angular/angular-cli/issues/30321).
 
 ### To reproduce
 1. Clone this repository.
